@@ -49,7 +49,7 @@ app.post('/register', async (req, res) => {
     return res.json({ message: 'Хэрэглэгч бүртгэгдлээ' });
   } catch (error) {
     console.error('Алдаа гарлаа:', error);
-    return res.status(500).json({ error: 'Серверийн дотоод алдаа' });
+    return res.status(500).json({ error: 'Серверт алдаа гарлаа' });
   }
 });
 
@@ -127,7 +127,7 @@ app.post('/update', async (req, res) => {
     }
   } catch (error) {
     console.error('Error updating password:', error);
-    return res.status(500).json({ error: 'Серверийн дотоод алдаа' });
+    return res.status(500).json({ error: 'Серверт алдаа гарлаа' });
   }
 });
 
